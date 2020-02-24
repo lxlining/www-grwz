@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="generator" content="HBuilder" />
+		<meta name="generator"  content="html5"  />
+		<meta name="keywords" content="个人，小林，lixl，web,重庆师范大学计算机与信息科学学院2018级，乐趣"  />
+		<meta name="author" content="李小林" />
+		<meta name="Description" content="这是一个基于HTML5写的个人网站，主要介绍与自己相关的一些人、事、物。重庆师范大学计算机与信息科学学院计科专业2018级学生李小林，运用以学技术进行实际操作。计算机给我带来了许多乐趣，当然少不了烦恼，但我深深地被它吸引，愿意为它做出努力，希望能成为一个超级极客！">
+		<title>我的主页</title>
+		<style>
+			body,html{
+			margin: 0; padding: 0; background-color: white; 
+		}
+		/*网页框架*/
+		#container{
+			margin: 0 auto;
+			width: 1100px;
+		}
+		/*banner属性设置*/
+		#banner{
+			
+			text-align: center;
+			width: 1100px;
+			 
+			position: relative;
+		}}
+		/* 链接属性及导航菜单的设定*/
+		#links{
+			
+			padding: 0px;
+			font-size: 60px;
+			position: relative;
+			background-color: deepskyblue;
+		}
+		#links ul{
+			list-style-type: none;
+			width: 1100px;
+			margin:  0px;
+			
+		}
+		#links ul li{
+			text-align: center;
+			width: 150px;
+			display: block;
+			float: left;
+			margin:  20px;
+			padding: 20px;
+			
+		}
+		/*导航菜单变化 点击后产生的颜色改变*/
+		#links a:link{
+			text-decoration: none;
+			color: #969;
+		}
+		#links a:visited{
+			color: #969;
+		}
+		/*整体页面的字体设置 */
+		.zt{
+			font-size: 30px;
+			font-family: "微软雅黑";
+			border-radius: 10px;
+			color: white;
+			margin-top: -20px;
+		}
+		/*主要页面内容 范围的相关设定*/
+		#content{
+			position: inherit;
+			font-size: 20px;
+			color: white;
+			
+			text-indent: 2em;				
+		}
+		/*内容板块的设置、分类 所处·位置*/
+		#d1{
+			height: 90px;
+			background-color: #83d6f5;
+			margin-top: -5px;
+			margin-bottom: 20px;
+			
+		}
+		#d2{
+			
+			border-radius: 5px;
+			background-color: #cde;
+			height: 450px;
+			margin-top: -39px;
+		}
+		#d3{
+			margin-top: -37px;
+			border-radius: 5px;
+			background-color: #cde;
+			height: 500px;
+		}
+		#d4{
+			margin-top: -37px;
+			border-radius: 5px;
+			background-color: #cde;
+			height: 500px;
+		}
+		#d5{
+			margin-top: 1px;
+			border-radius: 5px;
+			background:url("img/3.png");
+			height: 300px;
+			
+			
+		}
+        .pic1:hover{
+		    transform:rotate(-20deg);/*鼠标移进图片逆时针倾斜20度*/
+		 /* transform: scale(1.2);/*css的transform属性，图片放大1.5倍*/
+	    }
+		 a:hover{
+            background-color: rgb(170, 170, 170);
+            font-weight: bold;
+        }
+        #a{
+            
+            background-color: #cde;
+            padding: 10px;
+            -moz-transition: background-color 4s linear;
+            -webkit-transition:  background-color 4s linear;
+            -o-transition: background-color 4s linear;
+                }
+        #a:hover{
+                    background-color: yellow;
+                }
+        img#target{
+                    position: absolute;
+                    -moz-transition: left 5s linear,top 5s linear;
+            -webkit-transition:   left 5s linear,top 5s linear;
+            -o-transition: left 5s linear,top 5s linear;
+                }
+
+		/*各图片的的排版设计 对图像的处理*/
+		.pic{
+			float: left;
+			border: 1px solid silver;
+			height: 360px;
+			width: 300px;
+			border-radius: 20px;
+			margin-top: -60px;
+			margin-right: 10px;
+		}
+		.pic:hover{
+				transform: scale(1.5);/*css的transform属性，图片放大1.5倍*/
+				
+			}
+		/*对字体的特殊处理*/
+		.p1{
+			
+			margin-left: 5px;
+			font-size: 25px;
+			color: deepskyblue;
+			text-shadow: -2px 5px 8px #fff ;
+		}
+		/*对视频处理*/
+		.x{
+			margin-right: 5px;
+			border: 1px solid #fff;
+			border-radius: 10px;
+			float: left;
+		}
+		.time{
+				margin-top: -4px;
+				font-size: 40px;
+				background-color: #83d6f5;
+				color: darkmagenta;
+			}
+		h3{
+			color: purple;
+			font-family: 黑体;
+			text-align: center;
+			font-size: 40px;
+		}
+		/*脚注*/
+		#footer{
+			font-family: "微软雅黑";
+			font-size: 16px;
+			background-color: skyblue;
+			color: black;
+			margin-top: -15px;
+			text-align: center;
+		}
+
+		
+		</style>
+	</head>
+	<body>
+		
+		<div id="container">
+			<div id="banner" >
+				
+				 <img src="img/01.png" >
+				 <div id="time" class="time"></div>
+			</div>
+			
+			<div id="links">
+				<ul >
+					<li><button class="zt"><a href="index.html" ><b>我的主页</b></a></button></li>
+					<li><button class="zt"><a href="home.html" ><b>家乡情缘</b></a></button></li>
+					<li><button class="zt"><a href="school.html" ><b>学校专业</b></a></button></li>
+					<li><button class="zt"><a href="others.html" ><b>其他</b></a></button></li>
+				</ul>
+			</div>
+		
+		
+			<div id="content">
+				<div id="d1"></div>
+				<div id="d2" >
+					
+					<h3><b>我</b></h3>
+					<p class="p1" id="a">
+						
+						<img src="img/2.png" class="pic"/><b>重庆师范大学计算机与信息科学学院计算机科学与技术专业的学生，来自美丽多彩的重庆黔江，性格脾气还算好，生活作息也不太乱，我时而逗逼时而无趣，对很多事情都感兴趣，却很少去亲自做。我、爸妈与我姐组成了我们这个温馨的家庭，在他们的细心照料下我幸福、快乐的成长！到大学之后发现它并不如想象的那般美好，但大学还能让我们学到许多有用的知识，由对计算机专业的不解到渐渐熟悉，它如同黑洞一样吞噬着我的好奇心，吸引人不断发现、探索，我相信天道酬勤！！！
+							<br>
+							<br>
+							TEL:13896498343
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：1752116947@qq.com
+					</b></p>
+					
+					
+			
+				</div>
+				
+				<div id="d3">
+					<h3>兴趣爱好</h3>
+					<p class="p1" id="a"><embed src='http://player.youku.com/player.php/sid/XMzk5ODI4MjkxMg==/v.swf' allowFullScreen='true' quality='high' width='400' height='350'   align='middle' allowScriptAccess='always' type='application/x-shockwave-flash' class="x"></embed>
+					<b>爱好颇广：喜欢运动，想打篮球、羽毛球，跑步、徒步;喜欢运动之后的浑身舒爽以及运动时内心的清灵；生命在于运动，身体是革命的本钱！</b>	<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>同时也是一个喜欢安静的美男子，文学爱好者（伪），喜欢看看书，有感时写写随笔。喜欢：村上春树的《挪威的森林》、马尔克斯的《百年孤独》、太宰治的《人间失格》、余华的《活着》、王国维的《人间词话》；另外还喜欢历史！</b><br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>作为计算机人当然得喜欢代码了，喜欢编程；代码她很美，一个个的字符会创造出不一样的世界。受谷歌的某些影响，我希望自己能成为一名极客，为技术而疯狂！活着就是为了改变世界————Steve Jobs</b>
+					</p>
+				</div>
+				<div id="d4">
+					<h3>职业规划</h3>
+					<p class="p1" id="a">
+						<b>我想做一名全栈工程师，既能搞定前端又能弄懂后台，然后经过技术的积累做个系统架构师，再成为管理层或者是自己创业。在此过程中必将困难重重、风雨交夹，必将付出特别的努力、特别的精力，得耐得住寂寞、能自律！</b></p>
+						<p class="p1" id="a"><b>在今后的学习中必将更加刻苦，学好开设的专业课，并自学一些其他的、未开设的课程，了解IT新动态，为以后的工作做好准备！利其器，这是做事的前提，器锐然后利其事。</p></b>
+						<p class="p1" id="a"><b>
+					路遥知马力，坚持是一块基石，只有忍常人之不能忍，才能成非常之人！
+					
+							</p></b>
+							<p id="pTying"></p>
+				</div>
+				<div id="d5" class="pic1">
+				</div>
+			</div>
+			
+			<div id="footer">
+				<p>
+					 重庆师范大学计算机与信息科学学院计算机科学与技术专业<br> 学号：2018051603031&nbsp; 李小林&nbsp; Tel：15310842803 &nbsp;邮箱：1752116947@qq.com&nbsp;<br>版权所有.商业做网页或网站，有意者联系。
+				</p>
+			</div>
+		</div>
+		<script src="js/1.js" src="js/2.js" ></script>
+	</body>
+</html>

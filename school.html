@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>学校专业</title>
+		<style>
+			body,html{
+			margin: 0; padding: 0; background-color: white; 
+		}
+		/*网页框架*/
+		#container{
+			margin: 0 auto;
+			width: 1100px;
+			
+		}
+		/*banner属性设置*/
+		#banner{
+			text-align: center;
+			width: 1100px;
+			 height: 300px;
+			position: relative;
+		}
+		/* 链接属性及导航菜单的设定*/
+		#links{
+			
+			height: 100px;
+			font-size: 60px;
+			position: relative;
+			background-color: deepskyblue;
+		}
+		#links ul{
+			list-style-type: none;
+			width: 1100px;
+			margin:  0px;
+			
+		}
+		#links ul li{
+			text-align: center;
+			width: 200px;
+			
+			display: block;
+			float: left;
+			margin:  -10px;
+			padding: 20px;
+			
+		}
+		/*导航菜单变化 点击后产生的颜色改变*/
+		#links a:link{
+			text-decoration: none;
+			color: darkgreen;
+		}
+		#links a:visited{
+			color: green;
+		}
+		 a:hover{
+			color: #fcad17;
+			//transform: scale(1.5);
+		}
+		/*整体页面的字体设置 */
+		.zt{
+			font-size: 30px;
+			font-family: "微软雅黑";
+			border-radius: 10px;
+			color: white;
+			margin-top: -20px;
+		}
+		
+		img:hover{
+			opacity:0.5;/*透明度*/
+			transform: scale(1.5);/*css的transform属性，图片放大1.5倍*/
+			}
+		
+		/*主要页面内容 范围的相关设定*/
+		#content{
+			position: inherit;
+			font-size: 20px;
+			color: black;
+			
+			text-indent: 2em;		
+		}
+		/*内容板块的设置、分类 所处·位置*/
+		.d1{
+			height: 750px;
+			background-color: gainsboro;
+			margin-top:-40px ;
+		}
+		.ld2{
+			width: 500px;
+			height:420px;
+			background-color: darkgray;
+			float: left;
+			color: white;
+		}
+		.rd2{
+			width: 600px;
+			height: 420px;
+			background-color: grey;
+			float: right;
+			color: white;
+		}
+		.ld3{
+			width: 500px;
+			height:600px;
+			background-color: darkgray;
+			float: left;
+			color: white;
+			
+		}
+		.rd3{
+			width: 600px;
+			height: 600px;
+			background-color: grey;
+			float: right;
+			color: white;
+		}
+		.cd{
+			width: 1100px;
+			height: 300px;
+			background-color: greenyellow;
+		}
+		.f{
+			width: 1100px;
+			height: 80px;
+			
+		}
+		p{
+			font-family: "微软雅黑";
+		}
+		/*图片处理*/
+		.pic1{float: left; 
+			margin:0.5em;
+			border-radius: 20px; /*图片样式曲度*/
+			}
+			.pic2{float: right;
+			 margin:0.5em;
+			border-radius: 20px;
+			}/*图片样式*/
+			.a{
+			 	text-indent:2em;/*首行缩进*/
+			 	position: relative;
+			 	margin: 0.5em;
+			 }
+			 a{text-decoration: none;
+			   font-size:25px;
+			 }
+		h3{
+			font-size: 40px;
+			font-family: 黑体;
+			text-align: center;
+			color: purple;
+		}
+		h4{
+			color: purple;
+			font-size: 25px;
+		}
+		input{
+			background-color: transparent;
+		border:none;
+		color: #ffb400;
+		font-size: 25px;
+		font-family: 黑体;
+		font-weight: bold;
+		
+		}
+		.p:hover{
+			color: paleturquoise;
+		}
+		/*脚注*/
+		#footer{
+			font-family: "微软雅黑";
+			font-size: 16px;
+			background-color: darkseagreen;
+			color: black;
+			text-align: center;
+		}
+		form{padding: 0px;margin: 0px;}
+			.input{
+				border: 1px solid #000;
+				width: 40px;
+			}
+			.input.btn{
+				width: 60px; height: 18px;
+			}
+
+		</style>
+	</head>
+	<body onload="LenScroll()">
+		<div id="container">
+			<div id="banner">
+				<img src="img/11.jpg">
+			</div>
+				
+				<div id="links">
+					<table cellpadding="0" cellspacing="0" align="center">
+				<ul >
+					<li><button class="zt"><a href="index.html" ><b>我的主页</b></a></button></li>
+					<li><button class="zt 1"><a href="home.html" ><b>家乡情缘</b></a></button></li>
+					<li><button class="zt"><a href="school.html" ><b>学校专业</b></a></button></li>
+					<li><button class="zt"><a href="others.html" ><b>其他</b></a></button></li>
+				</ul>
+				</table>
+			</div>
+			<div id="content">
+				<div class="d1">
+					<h3>重庆师范大学</h3>
+				<p class="a"><img src="img/cs2.jpg" class="pic1"><a href="http://www.cqnu.edu.cn"><b>重庆师范大学</b></a>(英文简写CQNU)创办于1954年。是一所以文理为主，多学科协调发展的多科性高等学府，坐落在历史文化名城重庆，校园面积2804亩，包括大学城校区、沙坪坝校区和北碚校区。</p>
+<p class="a">学校拥有"国务院侨务办公室华文教育基地"、"教育部全国重点建设职教师资培训基地"两个国家级基地，重庆市普通中小学教师市级培训基地、重庆市幼儿教育教师市级研修培训基地、重庆市特殊教育教师市级培训基地、重庆市汉语国际推广培训基地、中德(重庆)职业教育示范基地、重庆市职教师资培训集团、重庆市管乐师资培训基地等多个市级基地。</p>
+<p class="a"><img src="img/cs3.jpg" class="pic2">截至2018年6月，学校办学条件良好、设施齐备、设备先进。三个校区各有1个图书馆，纸质图书270余万册，本地镜像电子图书104万种，本地镜像资源容量达55TB，数据库共46个。学校现有全日制本科生25500余人，研究生3600余人。专任教师1600余人。</p>
+<p class="a"><img src="img/cs5.jpg" class="pic1">2018年6月，近五年主持国家社科基金重大招标、国家自然科学基金等国家级项目186项，科研经费4亿余元；发表ESI热点、高被引论文、三大检索论文2521篇，出版高水平专著165部；获教育部自然科学一等奖、教育部人文社科奖、全国教育科学研究优秀成果奖、国家哲社文库等标志性成果79项。学校构建了校级、市级、部级科研平台三级培育体系，平台数量大幅提高，类型逐步扩展，拥有包括教育部重点实验室、省部共建教育部工程中心和重庆市人文社科重点研究基地、重点实验室、创新团队、协同创新中心、智库中心、院士专家工作站、海智工作站、国际合作基地、社科普及基地、创新创业示范团队、众创空间等在内的56个省部级科研平台。二是围绕服务区域发展，构建具有重师特色的社会综合服务模式。承担重庆区域发展顶层设计研究任务，编制主体功能区规划方案，为重庆市实施主体功能区发展战略并争取到国家数十亿财政专项资金发挥了积极作用；承担全市近80%的区县及景区旅游规划，深度参与策划武隆申报世界自然遗产等工作；搭建重庆市数字农业服务平台，帮助全市26个区县实现了农产品全过程服务于监管；通过实施“烛光·跨越”行动，开展校地、校企合作项目，为重庆市各区县构建从顶层设计--中层管理--实际运转的全方位、立体化、综合性区域创新服务体系，同时在重庆市抗战文史研究、三峡社会发展、微痕考古学、大学生思想政治教育测评指标体系等领域为政府提供决策咨询与公共服务。
+
+
+</p>
+				</div>
+				<div class="ld2">
+					<h4><b>数学与应用数学</b></h4>
+	<p class="a p"><img src="img/sxys.jpg" class="pic1">数学与应用数学专业培养掌握数学科学的基本理论与基本方法，具备运用数学知识、使用计算机解决实际问题的能力，受到科学研究的初步训练，能在科技、教育和经济部门从事研究、教学工作或在生产经营及管理部门从事实际应用、开发研究和管理工作的高级专门人才。</p>
+
+	
+				</div>
+				<div class="rd2">
+					<h4>计算机科学与技术</h4>
+<p class="a p"><img src="img/jsj1.jpg" class="pic1">本专业培养和造就适应现代化建设需要。德智体全面发展、基础扎实、知识面宽、能力强、素质高具有创新精神，系统掌握计算机硬件、软件的基本理论与应用基本技能，具有较强的实践能力，能在企事业单位、政府机关、行政管理部门从事计算机技术研究和应用，硬件、软件和网络技术的开发，计算机管理和维护的应用型专门技术人才。</p>
+				</div>
+				<div class="ld3">
+					<h4>汉语言文学</h4>
+<p class="a p"><img src="img/hyy.png" class="pic2">汉语言文学专业培养具有汉语言文学基本理论、基础知识和基本技能 ，能在新闻文艺出版部门、科研机构和机关企事业单位从事文学评论、汉语言文学教学与研究工作，以及文化、宣传方面的实际工作的汉语言文学专门人才。与汉语言文学相对应的专科专业为语文教育，其培养对象是在高等和中等学校进行汉语言文学教学和教学研究的教师、教学研究人员及其他教育工作等。</p>
+
+<a href="http://college.gaokao.com/school/tinfo/674/schspe/"><b>其它专业</b></a>
+				</div>
+				<div class="rd3">
+					<h4>学前教育</h4>
+	<p class="a p"><img src="img/xqju.jpg" class="pic2">学前教育是教育的组成部分，人类社会诞生之日，就是学前教育产生之时。学前教育是教育活动的最初阶段，是人生第一个教育阶段。广义的学前教育是指所有对学龄前儿童身心发展有影响的活动，它来自社会、学校、家庭各个方面。狭义的学前教育是指专门的学前教育机构所实施的教育，即托儿所、幼儿园的教育。<br>
+	<br><br>
+<a href="http://v.youku.com/v_show/id_XMjkxNjI5MzA2MA==.html"><b>重庆师范大学宣传片</b></a>
+<div class="f">
+				
+				<form name="colorform" class="input">
+			R:<input name="red" maxlength="2" type="text" >
+			G:<input name="green" maxlength="2" >
+			B:<input name="blue" maxlength="2" >
+			&nbsp;<input type="button" onclick="ChangeColor()" value="换颜色" class="btn">
+		</form>
+
+			</div>
+				</div>
+				
+			</div>
+			
+			<div id="footer">
+			<center>
+			<form name="nextFrom">
+				<input type="text" name="lenText">
+			</form>
+		</center>
+			</div>
+			
+		</div>
+		<script src="js/4.js">
+			var msg="重庆师范大学计算机与信息科学学院计算机科学与技术专业; 学号：2018051603031 李小林& Tel：15310842803 邮箱：1752116947@qq.com  版权所有 商业做网页或网站，有意者联系。";
+			var interval = 400;
+			var seq=0
+		    function LenScroll(){
+			document.nextFrom.lenText.value=msg.substring(seq,msg.length)+"  "+msg;
+		    	seq++;
+		    	if(seq>msg.length)
+		    	seq=0;
+		    	window.setTimeout("LenScroll();",interval);
+		    }
+
+		</script>
+		
+	</body>
+</html>

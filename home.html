@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>家乡情缘</title>
+		<style>
+			body,html{
+			margin: 0; padding: 0; background-color: white; 
+		}
+		/*网页框架*/
+		#container{
+			margin: 0 auto;
+			width: 1100px;
+			
+		}
+		/*banner属性设置*/
+		#banner{
+			text-align: center;
+			width: 1100px;
+			 height: 300px;
+			position: relative;
+		}
+		/* 链接属性及导航菜单的设定*/
+		#links{
+			
+			height: 100px;
+			font-size: 60px;
+			position: relative;
+			background-color: deepskyblue;
+		}
+		#links ul{
+			list-style-type: none;
+			width: 1100px;
+			margin:  0px;
+			
+		}
+		#links ul li{
+			text-align: center;
+			width: 200px;
+			
+			display: block;
+			float: left;
+			margin:  -10px;
+			padding: 20px;
+			
+		}
+		/*导航菜单变化 点击后产生的颜色改变*/
+		#links a:link{
+			text-decoration: none;
+			color: #69f;
+		}
+		#links a:visited{
+			color: #69f;
+		}
+		/*整体页面的字体设置 */
+		.zt{
+			font-size: 30px;
+			font-family: "微软雅黑";
+			border-radius: 10px;
+			color: white;
+			margin-top: -20px;
+		}
+		.1{
+			font-family: "黑体";
+		}
+		a:hover{
+            background-color: rgb(170, 170, 170);
+            font-weight: bold;
+        }
+        #a{
+            
+            background-color: skyblue;
+            padding: 10px;
+            -moz-transition: background-color 4s linear;
+            -webkit-transition:  background-color 4s linear;
+            -o-transition: background-color 4s linear;
+                }
+        #a:hover{
+                    background-color: #ecc;
+                }
+        img#target{
+                    position: absolute;
+                    -moz-transition: left 5s linear,top 5s linear;
+            -webkit-transition:   left 5s linear,top 5s linear;
+            -o-transition: left 5s linear,top 5s linear;
+                }
+		img:hover{
+			opacity:0.5;
+			}
+
+		/*主要页面内容 范围的相关设定*/
+		#content{
+			position: inherit;
+			font-size: 20px;
+			color: black;
+			
+			text-indent: 2em;		
+		}
+		/*导航栏位置*/
+		.d1{
+			height: 2500px;
+			background-color: skyblue;
+			margin-top: -40px;
+		}
+		/*各图片的的排版设计 对图像的处理*/
+		.pic{
+			border-radius: 10px;
+			border: 1px solid #fff ;
+			float: left;
+			margin-right: 10px;
+			
+		}
+		.pic:hover{
+			transform:rotate(20deg);/*鼠标移进图片顺时针倾斜20度*/	
+		}
+		.pic1{
+			border-radius: 10px;
+			border: 1px solid #fff  ;
+			float: left;
+			margin-right: 10px;
+			
+		}
+		.pic1:hover{
+			transform:rotate(-20deg);/*鼠标移进图片顺时针倾斜20度*/
+		}
+		.pic3{
+			border-radius: 10px;
+			border: 1px solid #fff  ;
+			float: left;
+			margin-right: 2px;
+			width: 200px;
+			height: 200px;
+			
+		}
+		.pic3:hover{
+			transform: scale(1.5);/*css的transform属性，图片放大1.5倍*/
+		}
+		/*对图片链接的处理 */
+		.jxtp{
+			overflow: hidden;
+			width: 100px;
+			height: 80px;
+			position: relative;
+			-webkit-animation: 3s move infinite linear;
+		}
+		.yd{
+			float: left;
+			text-decoration: none;
+			list-style-type: none;
+			}
+			/*版块二位置*/
+		.d2{
+			
+			background-color: skyblue;
+			margin-top: -38px;
+			
+		}
+		
+		/*h3标题*/
+		h3{
+			font-size: 40px;
+			font-family: 黑体;
+			text-align: center;
+			color: purple;
+		}
+		form{padding: 0px;margin: 0px;}
+			input{
+				border: 1px solid #000;
+				width: 40px;
+			}
+			input.btn{
+				width: 60px; height: 18px;
+			}
+
+		/*脚注*/
+		#footer{
+			font-family: "微软雅黑";
+			font-size: 16px;
+			background-color: darkseagreen;
+			color: black;
+			text-align: center;
+		}
+		p{
+			color: white;
+			font-family: "微软雅黑";
+			font-size: 25px;
+		}
+		h5{
+			color: purple;
+			font-family: 黑体;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="banner">
+				<img src="img/4.jpg">
+			</div>
+				
+				<div id="links">
+					<table cellpadding="0" cellspacing="0" align="center">
+				<ul >
+					<li><button class="zt"><a href="index.html" ><b>我的主页</b></a></button></li>
+					<li><button class="zt 1"><a href="home.html" ><b>家乡情缘</b></a></button></li>
+					<li><button class="zt"><a href="school.html" ><b>学校专业</b></a></button></li>
+					<li><button class="zt"><a href="others.html" ><b>其他</b></a></button></li>
+				</ul>
+				</table>
+			</div>
+			<div id="content">
+				<div class="d1">
+					<h3>家乡</h3>
+				<p id="a">
+					<img src="img/5.jpg" class="pic" > <b>
+				黔江坐落在重庆东南边陲，自撤县改区以来得到快速发展。近年来旅游强区战略确定，黔江进入了快速发展的快车道。这里有儿时的美好记忆，在也找不回的童年！在介绍下风土人情吧，地处武陵山腹地、渝东南中心地带，集革命老区、少数民族聚居区、边远山区、国家扶贫开发重点区于一体，是重庆市委、市政府确定的渝东南中心城市，也是国家《武陵山片区区域发展与扶贫攻坚规划》定位的武陵山片区6个中心城市之一。1988年成立四川省黔江地区，1998年撤销地区设立黔江开发区，2000年9月，撤销黔江开发区和黔江自治县，设立黔江区。黔江区是一个少数民族聚居区，全区有汉族、土家族、苗族、回族、蒙古族、藏族、维吾尔族、彝族、壮族、布依族、朝鲜族、满族、侗族、瑶族、白族、哈尼族、哈萨克族、黎族、佤族、高山族、畲族、水族、东乡族、撒拉族、普米族、塔吉克族、鄂温克族等27个少数民族。土家族、苗族是世居的少数民族，也是两大主体少数民族，回族是清朝迁入的，其他少数民族是婚姻关系、工作调动等迁入的。汉族分布于全区各地，集中在平坝、田土肥沃的地区，主要在千户所周围。苗族主要以龚、胡、秦、向四大家族为代表，“龚据水寨，胡据峡口，向据后坝、秦据册山”。
+					</b>
+				</p>
+				<p >美食：</p>
+				<div id="a">
+		<h5>黔江鸡杂</h5>
+			<p class="p" ><img src="img/ms1.png" class="pic1">美食仨地儿如果没去，你就不算真到过黔江；到了黔江没食黔江鸡杂，你也不算真正品尝过黔江美食！巴渝湿气重、喜吃麻辣。黔江鸡杂运用土家烹饪方式，鸡杂的腥膻味重，热菜油烹饪红艳艳的泡辣椒、粉嫩嫩的泡萝卜丝，辅以葱、姜、蒜、花椒等调料烹制而成。口味脆嫩鲜香、麻辣兼备，色鲜味美，醇香可口，麻辣得人食欲大增。
+			</p>
+			<h5>武陵山珍</h5>
+			<p class="p"><img src="img/ms2.jpg" class="pic1">“菌类营养丰富，常吃武陵山珍具有提高人体免疫力、抑制肿瘤细胞、开启人体功能系统三大功能和益智健脑、美容减肥、治病防癌、延年益寿四大作用。”黔城一家武陵山珍酒楼老板说，从开业至今，生意一直红火，从重庆主城、北京、广州等全国各地来的游客，很多慕名而来。
+目前，武陵山珍被誉为“东方魔汤”、“地球人美食”和“森林药品”，堪称世界一绝。
+			
+			</p>
+<h5>黔江绿豆粉</h5>
+<p class="p"><img src="img/ms3.png" class="pic1">濯水绿豆粉历史悠久，早在宋朝年间便有记载，宋人陈达叟将其列为鲜美的、无人间烟火气的素食二十品之一。“游古镇老街，看后河古戏，品土家美食，听阿蓬水音”是黔江濯水古镇旅游的四大亮点。游客在游览古镇的同时，吃一碗独具特色、传统手工制作的绿豆粉，大饱眼福之余也可以大饱口福。
+绿豆粉是大米和绿豆打磨成粉浆后，用漏斗挤出，在平底锅内形成蚊香般一圈一圈的面条，下锅煮熟后即可食用。
+</p>
+<h5>黔江地牯牛</h5>
+<p class="p"><img src="img/ms0.gif" class="pic1"> 地牯牛别名草食蚕、宝塔菜、神虫菜，属多年生草本植物，是武陵山区和黄土高原绝无污染的特有品种。此菜用制泡菜的方法做成，晶莹剔透，香脆可口，酸酸甜甜，风味独特，不仅是良好的食物而且还有较高的药用价值。饭后食用能帮助消化，酒后食用还可解酒。
+　　 制法：将地牯牛洗净，晾干，倒入泡菜水中，加食盐、香料、冰糖泡制3天，捞出即可食用，食时无需再添加任何调料。
+　　据了解，地牯牛，又名草石蚕。据《本草纲目》记载，该植物味甘，富含苏水糖，蛋白质，碳水化合物，氨基酸等。产品肉质脆嫩，无纤维，晶莹剔透，采用民间传统泡菜制作方法并结合现代工艺精制而成。草食蚕在全国各地都有零星种植，但是由于气候、土壤、水源等自然条件的差异，质量都不如黔江的草食蚕，经加工后的系列产品色彩不如黔江的草食蚕鲜艳、晶莹透明，口感也不如黔江的草食蚕脆嫩，而且种植、加工规模也不大，没有形成品牌和产业链条，市场竞争力不强。而黔江是全国草食蚕的主要产地，草食蚕品质好。
+</p>
+
+
+</div>
+				<p>风情：</p>
+				<div >
+					
+					<ul>	
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/10030.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543888866.jpg" /></span><div>濯水古镇</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6198.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543889195.jpg" /></span><div>芭拉胡景区</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/37706.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543888363.jpg" /></span><div>爱莉丝庄园</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6190.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2017-05/1493778819.jpg" /></span><div>土家十三寨</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6199.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2017-05/1493779137.jpg" /></span><div>小南海</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/44/14739.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543889128.jpg" /></span><div>阿蓬江国家湿地公园</div></a></li>
+
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6197.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543887471.jpg" /></span><div>蒲花暗河</div></a></li>
+
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6195.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543887505.jpg" /></span><div>八面山旅游度假区</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6194.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543887540.jpg" /></span><div>武陵仙山</div></a></li>
+
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6192.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543887563.jpg" /></span><div>阿蓬江神龟峡</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6191.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543889025.jpg" /></span><div>桥梁村</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6189.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543889037.jpg" /></span><div>仰头山</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6188.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2019-01/20190110100811991.jpg" /></span><div>灰千梁子</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6187.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543889059.jpg" /></span><div>西沙路步行街</div></a></li>
+
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6185.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543889096.jpg" /></span><div>文体中心</div></a></li>
+<li class="yd"><a href="https://www.qianjiang.gov.cn/html/63/6184.html" target="_blank"><span><img class="jxtp" src="https://www.qianjiang.gov.cn/uppic/2018-12/1543889117.jpg" /></span><div>大众广场</div></a></li>
+
+					</ul>
+
+				</div>
+
+				</div>
+				<div>
+					<form name="colorform">
+			R:<input name="red" maxlength="2" type="text">
+			G:<input name="green" maxlength="2" >
+			B:<input name="blue" maxlength="2" >
+			&nbsp;<input type="button" onclick="ChangeColor()" value="换颜色" class="btn">
+		</form>
+
+					
+				</div>
+
+				<div class="d2" id="a ">
+					<h3>家人</h3>
+					<p id="word" style="display:none;" id="a text">
+						我家有我、爸妈、我姐姐们,当然了，现在就我和我爸妈生活在一起。说下他们吧，我爸是一个严厉又倔强的老头，小的时候，我跟我姐都怕他，但那时的他经常在外打工，一年就回家两三次。现在因为受伤了就一直在家，但他还真是一个持家的好男人，他做的菜特别的好吃，百吃不厌。现在长大后却和他经常拌嘴，想要夺权，嘻嘻嘻！大多都是由我们关念不同造成的，不过也在经量减少。无疑在我心中他是一个伟大的人，在许多方面都十分的优秀，好像他什么都会一样，崇拜的小眼神！<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我妈从小就在我身边，所以我同他特别特别的亲近，比同我爸的关系好多了，在我爸要打我时，她终是站在我一边，嘻嘻嘻！从小到大，母亲对我的影响无疑是非常非常大的，无论做人的道理，还是人生观的形成，虽然现在她很少能教我什么了，但我人就愿意聆听她的唠叨，少了中学时的不赖烦。也许可能是现在我们一年见不了几次面的缘故吧，但我们在一起时仍旧同往常一样，我还是那个永远永远长不大的孩子，她仍旧在为我遮风避雨，在人生坦途上陪着我走下去。
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我大姐从小就被我欺负（她总让着我！！！），那时候十分的皮，然后就总是让她不省心，但她在印象中从未打过我，即使是从旁人口中得知的也是她对我和二姐很好，现在虽然她已经有两个baby，但仍然对我分外的好。（惭愧、内疚）
+				
+				
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我二姐就比较的凶了，是她总欺负我，但我却仍旧喜欢跟在她后边，虽然有时被她弄哭，但无疑那时候几乎是最快乐的时光，无忧无虑。在我长大的时光中，她一直带给我欢乐，虽然经常吵架甚至打架，但绝没有影响我们姐弟的感情！
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正如时光不弃，让我们相遇，并且成为一家人，这段时间里充满了各种不可能，艰辛、痛苦、欢乐等等，人生百味，相信那一味都有。感谢我的家人一路的陪伴，以后还长，共勉：<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;幸福，有时是那样虚浮，有时是那样真实；幸福，有时是那样的近，有时却是如此的远；幸福，有时很简单，有时却很复杂。
+
+				&nbsp;&nbsp;家，是精神的支柱，家，是温馨的港湾，家，给我们无限力量，家，给我们指引了奋斗目标，家，是一生行走过的永恒驿站，无论走到哪，永久牵挂的还是家。
+家里的粗茶淡饭很简单，吃着放心舒坦；家里的叮咛嘱咐不间断，听着暖心喜欢；家里的房小屋窄不方便，住着安心温暖。带着幸福回家看看，牵着快乐回家转转！
+走遍千山万水，看过潮起潮落，尝尽酸甜苦辣，度过春夏秋冬，始终觉得家的怀抱最温暖，最踏实！不论我走多远，我心永远眷恋。
+
+					</p>
+					<p id="show" ></p>
+					<marquee scrollamount="10">
+				<img src="img/jr1.jpeg" class="pic3" >
+				<img src="img/jr2.jpeg" class="pic3">
+				<img src="img/jr3.jpeg" class="pic3">
+				<img src="img/jr4.jpeg" class="pic3" >
+				<img src="img/jr8.jpg" class="pic3">
+				<img src="img/jr6.jpeg" class="pic3">
+				<img src="img/jr7.jpg" class="pic3">
+				<img src="img/jr5.jpg" class="pic3" >
+				<img src="img/jr9.jpg" class="pic3" >
+				<img src="img/jr10.jpg" class="pic3" >
+			</marquee>	
+			  <script>
+                window.onload=function(){
+                    var story = document.getElementById('word');
+                    var s = document.getElementById('show');
+                    var i = 0;
+                    timer=setInterval(function(){
+                        s.innerHTML=story.innerHTML.substring(0,i);
+                        i++;
+                        if(s.innerHTML==story.innerHTML){
+                            clearInterval(timer);
+                        }
+                    },30);
+                }
+            </script>
+				</div>
+				
+			</div>
+			<div id="footer">
+				
+					 重庆师范大学计算机与信息科学学院计算机科学与技术专业<br> 学号：2018051603031&nbsp; 李小林&nbsp; Tel：15310842803 &nbsp;邮箱：1752116947@qq.com<br>版权所有.商业做网页或网站，有意者联系。
+				
+			</div>
+		</div>
+		<script>
+			function ChangeColor(){
+				var red=document.colorform.red.value;
+				var green =document.colorform.green.value;
+				var blue =document.colorform.blue.value;
+				var obj=document.getElementById("text");
+				obj.style.color="#"+red+green+blue;
+			}
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>其他</title>
+		<style>
+			body,html{
+			margin: 0px; padding: 0px; background-color: white; 
+		}
+		/*网页框架*/
+		#container{
+			margin: 0 auto;
+			width: 1100px;
+			
+		}
+		/*banner属性设置*/
+		#banner{
+			text-align: center;
+			width: 1100px;
+			 height: 400px;
+			position: relative;
+		}
+		/* 链接属性及导航菜单的设定*/
+		#links{
+			
+			height: 100px;
+			font-size: 60px;
+			position: relative;
+			background-color: deepskyblue;
+		}
+		#links ul{
+			list-style-type: none;
+			width: 1100px;
+			margin:  0px;
+			
+		}
+		#links ul li{
+			text-align: center;
+			width: 200px;
+			
+			display: block;
+			float: left;
+			margin:  -10px;
+			padding: 20px;
+			
+		}
+		/*导航菜单变化 点击后产生的颜色改变*/
+		#links a:link{
+			text-decoration: none;
+			color: #09c;
+		}
+		#links a:visited{
+			color: #09c;
+		}
+		/*整体页面的字体设置 */
+		.zt{
+			font-size: 30px;
+			font-family: "微软雅黑";
+			border-radius: 10px;
+			color: white;
+			margin-top: -20px;
+		}
+		/*主要页面内容 范围的相关设定*/
+		#content{
+			position: relative;
+			font-size: 20px;
+			color: black;
+			
+			text-indent: 2em;		
+		}
+		/*板块一内容*/
+		.d1{
+			margin-top: -40px;
+			
+			background-color: lightgoldenrodyellow;
+			font-family: "微软雅黑";
+		}
+		/*各图片的的排版设计 对图像的处理*/
+		.pic{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #fff;
+			border-radius: 10px;
+			margin: 6px;
+		}
+		.pic:hover{
+			transform: scale(1.5);/*css的transform属性，图片放大1.5倍*/
+		}
+
+		h3{
+			font-size: 40px;
+			font-family: 黑体;
+			text-align: center;
+			color: purple;
+			
+		}
+		h4{
+			font-size: 30px;
+			color: dodgerblue;
+		}
+	
+		/*脚注*/
+		#footer{
+			margin-top: -37px;
+			font-family: "微软雅黑";
+			font-size: 16px;
+			background-color: darkseagreen;
+			color: black;
+			text-align: center;
+			position: relative;
+		}
+		.i{
+			
+			margin-left: 300px;
+		}
+		.s{
+			font-size: 25px;
+		}
+        p:hover{
+        	color: #964d9f;
+        }
+        .login {background: url(img/21.png)}
+.login:hover{background: url(img/22.png)}
+		</style>
+	</head>
+	<body >
+    <script>
+        var loadMsg=function(){
+            var tb=document.getElementById("show");
+            tb.innerHTML="";
+            for(var i=0;i<localStorage.length;i++){
+                var key=localStorage.key(i);
+                var date=new Date();
+                date.setTime(key);
+                var datestr=date.toLocaleDateString()+"&nbsp;"+date.toLocaleTimeString();
+                var value=localStorage.getItem(key);
+                
+                var row=tb.insertRow(i);
+                row.insertCell(0).innerHTML=value;
+                row.insertCell(1).innerHTML=datestr;    
+            }
+        }
+            var addMsg=function(){
+            var msgElement=document.getElementById("msg");
+            var time=new Date().getTime();
+            localStorage.setItem(time,msgElement.value);
+            msgElement.value="";
+            alert("数据以保存！");
+            loadMsg();
+        }
+        function clearMsg(){
+            localStorage.clear();
+            alert("全部留言信息已被清除！");
+            loadMsg();
+        }
+        window.onload=loadMsg();
+    </script>
+        
+		<div id="container">
+			<div id="banner" class="login">
+				
+			</div>
+				
+				<div id="links">
+					<table cellpadding="0" cellspacing="0" align="center">
+				<ul >
+					<li><button class="zt"><a href="index.html" ><b>我的主页</b></a></button></li>
+					<li><button class="zt 1"><a href="home.html" ><b>家乡情缘</b></a></button></li>
+					<li><button class="zt"><a href="school.html" ><b>学校专业</b></a></button></li>
+					<li><button class="zt"><a href="others.html" ><b>其他</b></a></button></li>
+				</ul>
+				</table>
+			</div>
+			<div id="content">
+				<div class="d1">
+					<h3>分享</h3>
+						<h4>读书与体验感悟</h4>
+					<p>
+						在阅读之中你能通过他人的视角去了解这个世界，去体会某种情感，去明白某些道理，同时提升自己的人文素养。<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我最喜欢的作家是：王国维、路遥、余华；春上春树、太宰治等等，从他们作品中能读出许多东西来，有许多打动人心的东西，内心深处的东西，来自于灵魂吧！无论是《平凡的世界》《活着》《挪威的森林》亦或是《人间失格》，其中都有悲悯人心的情感，有许多的代入感，也许并不是简简单单的冲动，而是那种源于神的独特感受。<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在《追风筝的人》中，最打动人心的无疑是“为你，千千万万遍”，是的，短短几字，却情深意切，一字千金绝不为过。
+						愿我们每个人身边都有一个“哈桑”为我千千万万遍，也愿世间有一个人让我们成为“哈森”，可以为他千千万万遍……
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在王国维的《人间词话》中写了人生三境：一、昨夜西风凋碧树，独上高楼，望尽天涯路。
+二、衣带渐宽终不悔，为伊消得人憔悴。
+三、众里寻他千百度，蓦然回首，那人却在灯火阑珊处。
+后人归为：知、行、得。也有人归为：茫、忙、盲；悟、忙；大悟、归真、闲。
+我最认可的就是<a href="https://www.jianshu.com/p/5b11d269070e
+">简书</a>上的评论。<br>
+
+<img src="img/23.jpg" class="pic">
+<img src="img/22.jpg" class="pic">
+<img src="img/24.png" class="pic">
+<img src="img/25.png" class="pic">
+<img src="img/26.jpg" class="pic">
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;除此之外，还有很多喜欢的书籍与作家，对历史比较感兴趣，喜欢《三国演义》、《明朝那些事儿》这样的历史小说，喜欢始皇——嬴政、魏武帝——曹操、隋炀帝——杨广这样的人物。
+					</p>
+					<h4>运动</h4>
+					<p>
+						其实以前是不太喜欢运动的，但总有改变观念的时候，至于为什么会改变就不去深究了。人们常常说“生命在于运动”，没错，就是如此，运动能给我们带来很多好处：<br>
+						
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1、体育锻炼具有调节人体紧张情绪的作用，能改善生理和心理状态，恢复体力和精力；
+2、体育锻炼能增进身体健康，使疲劳的身体得到积极的休息，使人精力充沛地投入学习、工作；
+3、舒展身心,有助安眠及消除读书带来的压力
+4、体育锻炼可以陶冶情操，保持健康的心态，充分发挥个体的积极性、创造性和主动性，从而提高自信心和价值观，使个性在融洽的氛围中获得健康、和谐的发展；
+5、体育锻炼中的集体项目与竞赛活动可以培养人的团结、协作及集体主义精神。
+少年是人一生中身心发育趋向成熟的重要转折时期，这时你会惊异的发现，在生理和心理方面出现许多前所未有的变化，并明显的感到，我长大了。随着人民生活水平和文化素质的提高，“爱美之心，人皆有之”，我们要在体育运动中茁壮成长、在运动中保持健美。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;运动的重要性  
+运动是键康之本。生命在于运动，运动让我们生命活力力十足，心情舒畅，远离疾病，健康长寿。
+运动离不开我们。生命在于运动；运动能使我们体能增强；运动能使我们保持有型的身材；运动能使我们耐力增加；运动能使我们胸怀坦荡；运动能使我们朝气蓬勃；运动能使我们神采飞扬；运动能使我们充满毅力；更能使我们去轻松面对生活。<br>
+<img src="img/pb1.jpg" class="pic"><img src="img/pb1.png" class="pic"><img src="img/pb2.png" class="pic"><img src="img/pb3.png" class="pic"><img src="img/pb4.png" class="pic">
+					</p>
+					
+					 
+					<h4>message</h4>
+					<div>
+						<textarea id="msg" name="msg" cols="100" rows="10"></textarea><br>
+						
+    <input type="button" value="添加留言" onclick="addMsg();" class="i s">
+    <input type="button" value="清除留言" onclick="clearMsg();" class="s">
+    <hr>
+    <table style="width: 800px">
+        <tr>
+            <th>留言内容</th>
+            <th>留言时间</th>
+            
+        </tr>
+        <tbody id="show"></tbody>
+    </table>
+						
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				重庆师范大学计算机与信息科学学院计算机科学与技术专业<br>学号：2018051603031&nbsp; 李小林&nbsp; Tel：15310842803 &nbsp;邮箱：1752116947@qq.com<br>版权所有.商业做网页或网站，有意者联系。
+
+				
+				
+			</div>
+		</div>
+	</body>
+</html>
